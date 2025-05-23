@@ -1,7 +1,7 @@
 import { getRandomUsers } from "@/actions/user.action";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "./card";
 import Link from "next/link";
-import { Avatar, AvatarImage } from "./ui/avatar";
+import { Avatar, AvatarImage } from "./avatar";
 import FollowButton from "./FollowButton";
 
 async function WhoToFollow() {

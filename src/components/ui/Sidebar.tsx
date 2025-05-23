@@ -1,11 +1,11 @@
 import { currentUser } from "@clerk/nextjs/server";
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SignInButton, SignUpButton } from "@clerk/nextjs";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { getUserByClerkId } from "@/actions/user.action";
 import Link from "next/link";
-import { Avatar, AvatarImage } from "./ui/avatar";
-import { Separator } from "./ui/separator";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Separator } from "@/components/ui/separator";
 import { LinkIcon, MapPinIcon } from "lucide-react";
 
 async function Sidebar() {

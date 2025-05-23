@@ -2,14 +2,14 @@
 
 import { useUser } from "@clerk/nextjs";
 import { useState } from "react";
-import { Card, CardContent } from "./ui/card";
-import { Avatar, AvatarImage } from "./ui/avatar";
-import { Textarea } from "./ui/textarea";
+import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Textarea } from "@/components/ui/textarea";
 import { ImageIcon, Loader2Icon, SendIcon } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { createPost } from "@/actions/post.action";
 import toast from "react-hot-toast";
-import ImageUpload from "./ImageUpload";
+import ImageUpload from "@/components/ui/ImageUpload";
 
 function CreatePost() {
   const { user } = useUser();
